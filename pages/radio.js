@@ -5,7 +5,7 @@ const Radio = () => {
   return (
     <>
       <HeroSection
-        backgroundHeight="40vh"
+        backgroundHeight="60vh"
         backgroundImage="images/holli-cover-img.jpg"
         heroText="Holli Radio"
         subText="Listen to the latest Calypso and Soca Music"

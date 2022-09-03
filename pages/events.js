@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <EventsPage>
       <HeroSection
-        backgroundHeight="40vh"
+        backgroundHeight="60vh"
         backgroundImage="images/holli-cover-img.jpg"
         heroText="Events"
         subText="Latest Events from Holli Networks"
