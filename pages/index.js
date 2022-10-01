@@ -2,9 +2,20 @@ import { useState } from 'react'
 import Link from 'next/link'
 import HeroSection from '../components/HeroSection'
 import Button from '../components/Button'
+import { PostCard, PostWidget, Categories } from '../components'
 
-export default function Home() {
-  const [isOpen, setOpen] = useState(false)
+import { getPosts } from '../lib/data'
+
+export async function getStaticProps() {
+  const data = (await getPosts()) || []
+
+  return {
+    props: { data },
+  }
+}
+
+export default function Home({ data }) {
+  console.log(data.posts)
   return (
     <div>
       <HeroSection
@@ -41,27 +52,22 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="container">
+          <div className="post-container">
             <h2>Latest Holli Network Events</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              quia officiis, quisquam atque dolorem ea iusto nulla quaerat
-              voluptates totam! Praesentium aspernatur reiciendis autem. Dolor
-              incidunt esse omnis beatae ullam?
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              quia officiis, quisquam atque dolorem ea iusto nulla quaerat
-              voluptates totam! Praesentium aspernatur reiciendis autem. Dolor
-              incidunt esse omnis beatae ullam?
-            </p>
-          </div>
-          <div className="btn">
-            <Link href="/contact" passHref>
-              <a>
-                <Button>More Events!</Button>
-              </a>
-            </Link>
+            <div className="post-section">
+              {data.posts.map((post) => (
+                <div key={post.title}>
+                  <PostCard post={post} />
+                </div>
+              ))}
+            </div>
+            <div className="btn">
+              <Link href="/events" passHref>
+                <a>
+                  <Button>Click Here for More Events!</Button>
+                </a>
+              </Link>
+            </div>
           </div>
         </section>
       </div>

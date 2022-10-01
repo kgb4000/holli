@@ -20,12 +20,6 @@ const Navbar = ({ toggle }) => {
               <a>Events</a>
             </Link>
           </li>
-          <li>Merch</li>
-          <li>
-            <Link href="/radio" passHref>
-              <a>Radio</a>
-            </Link>
-          </li>
           <li>Gallery</li>
           <li>
             <Link href="/about" passHref>
