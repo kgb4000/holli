@@ -27,6 +27,15 @@ export default function Home({ data }) {
         buttonLink="https://www.eventbrite.com/o/holli-network-18472370741"
       />
       <div className="content">
+        <section className="signup-form">
+          <div className="signup-container">
+            <h2>Signup for Exclusive Party Discounts</h2>
+            <form className="signup">
+              <input type="email" placeholder="Enter email" />
+              <input type="button" value="Submit" />
+            </form>
+          </div>
+        </section>
         <section>
           <div className="container">
             <h2>What is the Holli Netowrk?</h2>
@@ -51,6 +60,7 @@ export default function Home({ data }) {
             </Link>
           </div>
         </section>
+
         <section>
           <div className="post-container">
             <h2>Latest Holli Network Events</h2>

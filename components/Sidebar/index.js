@@ -14,8 +14,6 @@ import {
   SidebarBtnLinkA,
 } from './SidebarElements'
 
-const calendly = 'https://calendly.com/monica-17/monica-browne-weddings-call'
-
 const Sibebar = ({ isOpen, toggle }) => {
   return (
     <>
@@ -28,11 +26,6 @@ const Sibebar = ({ isOpen, toggle }) => {
             <SidebarItem>
               <SidebarLink href="/events">
                 <SidebarLinkA>Events</SidebarLinkA>
-              </SidebarLink>
-            </SidebarItem>
-            <SidebarItem>
-              <SidebarLink href="/merch">
-                <SidebarLinkA>Merch</SidebarLinkA>
               </SidebarLink>
             </SidebarItem>
             <SidebarItem>

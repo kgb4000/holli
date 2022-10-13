@@ -7,8 +7,8 @@ const Button = styled('button')`
   margin: 2rem 0;
   padding: 1.2rem 1.4rem;
   text-align: center;
-  border: 2px solid ${(props) => (props.primary ? 'white' : '#a29bfe')};
-  background-color: ${(props) => (props.primary ? 'white' : '#a29bfe')};
+  border: none;
+  background-color: ${(props) => (props.primary ? 'white' : '#e74c3c')};
   color: ${(props) => (props.primary ? 'white' : 'white')};
   box-shadow: 0 2px 4px rgb(35 54 66 / 20%);
   text-transform: uppercase;

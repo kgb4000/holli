@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
+import Button from './Button'
 
 const Navbar = ({ toggle }) => {
   return (
@@ -20,15 +21,14 @@ const Navbar = ({ toggle }) => {
               <a>Events</a>
             </Link>
           </li>
-          <li>Gallery</li>
-          <li>
+          {/* <li>
             <Link href="/about" passHref>
               <a>About us</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact" passHref>
-              <a>Contact us</a>
+              <a>Contact</a>
             </Link>
           </li>
         </ul>

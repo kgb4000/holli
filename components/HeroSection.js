@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Button from "../components/Button";
+import styled from 'styled-components'
+import Button from '../components/Button'
 
 const HeroSection = ({
   backgroundImage,
@@ -26,10 +26,10 @@ const HeroSection = ({
         </div>
       </Hero>
     </>
-  );
-};
+  )
+}
 
-const Hero = styled("span")`
+const Hero = styled('span')`
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ const Hero = styled("span")`
     text-align: center;
     font-weight: 700;
   }
-`;
+`
 
 const WhiteButton = styled(Button)`
   border: #fff;
@@ -105,6 +105,6 @@ const WhiteButton = styled(Button)`
     padding: 1.4rem 1.6rem;
     font-size: 1rem;
   }
-`;
+`
 
-export default HeroSection;
+export default HeroSection
