@@ -24,18 +24,23 @@ const Sibebar = ({ isOpen, toggle }) => {
         <SidebarWrapper>
           <SidebarMenu>
             <SidebarItem>
+              <SidebarLink href="/">
+                <SidebarLinkA>Home</SidebarLinkA>
+              </SidebarLink>
+            </SidebarItem>
+            <SidebarItem>
               <SidebarLink href="/events">
                 <SidebarLinkA>Events</SidebarLinkA>
               </SidebarLink>
             </SidebarItem>
-            <SidebarItem>
+            {/* <SidebarItem>
               <SidebarLink href="/gallery">
                 <SidebarLinkA>Gallery</SidebarLinkA>
               </SidebarLink>
-            </SidebarItem>
+            </SidebarItem> */}
             <SidebarItem>
               <SidebarLink href="/about">
-                <SidebarLinkA>About us</SidebarLinkA>
+                <SidebarLinkA>About</SidebarLinkA>
               </SidebarLink>
             </SidebarItem>
             <SidebarItem>

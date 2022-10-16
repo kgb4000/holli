@@ -33,24 +33,28 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
   color: #fff;
-  text-align: center;
+  // text-align: center;
+  margin: 0 auto 0 4rem;
 `
 
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
-  text-align: center;
+  // text-align: center;
+  text-align: left;
   margin: 0;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    // grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(6,100px);
   }
 `
 export const SidebarItem = styled.li`
   height: 80px;
   line-height: 80px;
-  color: #000;
+  // color: #000;
+  list-style: none;
 `
 
 export const SidebarLink = styled(Link)``
@@ -66,6 +70,8 @@ export const SidebarLinkA = styled.a`
   color: #fff;
   cursor: pointer;
   display: block;
+  font-size: 2rem;
+  font-weight: 300;
 
   &:hover {
     color: #a29bfe;

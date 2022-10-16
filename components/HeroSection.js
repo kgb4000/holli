@@ -6,8 +6,10 @@ const HeroSection = ({
   heroText,
   subText,
   buttonText,
-  backgroundHeight,
   buttonLink,
+  signupText,
+  signupLink,
+  backgroundHeight,
 }) => {
   return (
     <>
@@ -21,6 +23,11 @@ const HeroSection = ({
           {buttonText && (
             <a href={buttonLink} target="_blank" rel="noreferrer">
               <WhiteButton>{buttonText}</WhiteButton>
+            </a>
+          )}
+          {signupText && (
+            <a href={signupLink} target="_blank" rel="noreferrer">
+              <WhiteButton>{signupText}</WhiteButton>
             </a>
           )}
         </div>
@@ -44,7 +51,9 @@ const Hero = styled('span')`
   height: ${(props) => props.backgroundHeight};
   background-size: cover;
   margin: 0 auto;
-  margin-top: -100px;
+  // margin-top: -100px;
+  margin-top: -10vh;
+  margin-bottom: 2rem;
   max-width: 100vw;
 
   @media only screen and (min-device-width: 360px) {
@@ -68,7 +77,7 @@ const Hero = styled('span')`
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 1.4;
       letter-spacing: 1px;
     }

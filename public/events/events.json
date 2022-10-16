@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "title": "Breaking Dawn",
+            "slug": "born-to-party",
+            "date": "2022-07-10T06:00:00-04:00",
+            "venue": {
+                "name": "Karma",
+                "address": "2221 Adams Place NE"
+            },
+            "excerpt": "J'ouvert is a traditional festival known as \"break day\". After a two year absence, Holli is bringing the true elements of J'ouvert back to Baltimore City, starting with the early morning event start time at 6am. Holli wants to provide such an amazing experience for patrons. J'ouvert should be an experience that brings out the cultural elements of Carnival and the Caribbean Community. We know how to party and no doubt this year's Holli J'ouvert is going to be a memorable one. We are inviting the entire Caribbean diaspora not just those in the DMV area, but across the United States. All generations, especially those who may not have experienced a J'ouvert fete before, this event is definitely for you. We look forward to feteing with you on July 10th!!",
+            "featuredImage": {
+                "width": 5692,
+                "height": 4000,
+                "url": "./images/holli-event-20220710.jpg"
+            }
+        },
+        {
+            "title": "Born to Party",
+            "slug": "born-to-party",
+            "date": "2022-03-26T21:00:00-04:00",
+            "venue": {
+                "name": "Karma",
+                "address": "2221 Adams Place NE"
+            },
+            "excerpt": "Born to party is an exclusive event put on by the Holli Network and will be aired on MSNBC on December 30th, 2022. Party with us till we drop.",
+            "featuredImage": {
+                "width": 5692,
+                "height": 4000,
+                "url": "./images/holli-event-20220710.jpg"
+            }
+        }
+    ]
+}

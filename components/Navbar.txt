@@ -1,0 +1,117 @@
+import Link from 'next/link'
+import styled from 'styled-components'
+import { FaBars } from 'react-icons/fa'
+import Button from './Button'
+
+const Navbar = ({ toggle }) => {
+  return (
+    <Nav>
+      <div className="logo">
+        <Link href="/" passHref>
+          <a><img src="images/holli-network-logo.jpg" alt="Holli Network"/></a>
+        </Link>
+      </div>
+      <MobileIcon onClick={toggle}>
+        <FaBars />
+      </MobileIcon>
+      <nav>
+        <ul className="nav">
+          <li>
+            <Link href="/events" passHref>
+              <a>Events</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" passHref>
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" passHref>
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </Nav>
+  )
+}
+
+export default Navbar
+
+const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 719px) {
+    display: flex;
+    transform: translate(-100%. 60%);
+    cursor: pointer;
+    align-item: center;
+    color: #ffffff;
+    // color: #e74c3c88;
+    font-size: 2rem;
+    // height: 80px;
+    line-height: 80px;
+    align-items: center;
+    height: 10vh;
+    max-height: 110px;
+  }
+`
+
+const Nav = styled.header`
+  display: flex;
+  color: #ffffff;
+  // color: #e74c3c88;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  max-width: 90%;
+  margin: 0 auto;
+  // height: 80px;
+  line-height: 80px;
+  height: 10vh;
+  max-height: 110px;
+
+  .logo {
+    font-weight: bold;
+    font-size: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    display: none;
+
+    @media screen and (min-width: 720px) {
+      display: flex;
+  }
+
+  .nav {
+    display: none;
+    font-size: 1.4rem;
+
+    @media screen and (min-width: 720px) {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+        line-height: 80px;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.4rem;
+          font-weight: 700;
+
+          :hover {
+            border-bottom: 4px solid #fff;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+`
